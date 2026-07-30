@@ -1,12 +1,77 @@
-body{
-    background-color: green;
-    font-family: Arial, sans-serif;
+/* === Reset básico === */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-p{
-    color: white;
-    font-size: 16px;
+
+body {
+	background-color: green;
+	font-family: Arial, sans-serif;
 }
-h1{
-    color: yellow;
-    font-size: 24px;
+
+/* === Navbar === */
+.navbar {
+	background-color: #1a1a2e;
+	padding: 0 20px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 60px;
+}
+
+.nav-logo {
+	color: #e94560;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.nav-menu {
+	list-style: none;
+	display: flex;
+	gap: 10px;
+}
+
+.nav-link {
+	color: #fff;
+	text-decoration: none;
+	padding: 8px 16px;
+	border-radius: 4px;
+	transition:
+		background-color 0.3s,
+		color 0.3s;
+}
+
+.nav-link:hover {
+	background-color: #e94560;
+	color: #fff;
+}
+
+.nav-link.active {
+	background-color: #e94560;
+	color: #fff;
+}
+
+/* === Contenido principal === */
+.content {
+	max-width: 1200px;
+	margin: 40px auto;
+	padding: 0 20px;
+}
+
+p {
+	color: white;
+	font-size: 16px;
+}
+
+h1 {
+	color: yellow;
+	font-size: 24px;
 }
