@@ -1,3 +1,10 @@
+/* ===== ESTILOS GENERALES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: green;
     font-family: Arial, sans-serif;
@@ -9,4 +16,34 @@ p{
 h1{
     color: yellow;
     font-size: 24px;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff6600;
+    color: #fff;
+    transform: scale(1.1);
 }
